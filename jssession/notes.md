@@ -11,7 +11,7 @@ formas de incluir javasc
 	inline, un archivo externo
 
 alert 
-	manda un mensaje un numero o una alertaalert
+	manda un mensaje un numero o una alerta
 
 variables
 	una manera o un espacio para guardad un dato ej. /var/ age = 5;
@@ -90,6 +90,85 @@ var legalAgeFemale = age >= 18 && gender == 'female'
 	    alert("Pagale chavo");
 	}
 
+var password = 'password';
+var userPassword = '';
+
+do {
+    userPassword = prompt("Dime el password");
+}while(userPassword != password);
+
+alert("Estas logueado!");
+
+
+var password = 'password';
+var userPassword = '';
+
+var pregunta = 'perro';
+var userPregunta = prompt('Como se llama: ');
+
+while(userPregunta != pregunta){
+        userPassword = prompt('como se llama tu perro:')
+    
+
+	while(userPassword != password) {
+    	userPassword = prompt('Ingresa tu password: ');
+    }
+    
+    
+};
+
+
+alert('Bienvenido');
+
+var password = 'password'
+var userPassword = '';
+for(var i = 0; i<10; i++){
+    userPassword = prompt("cual es tu password?" + i);
+    if (userPassword == password)
+    {
+        alert("bienvenido")
+        break
+    }
+    else
+    {
+        alert("Internalo de nuevo");
+    }
+} 
+
+var upTo = prompt("hasta que numero quieres sumar:");
+var sum = 0;
+
+for(var i=0; i < upTo; i ++){
+    sum = sum + i;
+     
+}
+
+alert(sum);
+
+---------------------------------------------
+
+var upDown = parseInt(prompt("hasta que numero quieres sumar:");
+var sum = 0;
+
+for(var i=upDown; i >= upDown; i --){
+    sum = sum + i;
+     
+}
+
+alert(sum); 
+
+var upTo = prompt("hasta que numero quieres sumar:");
+var sum = 0;
+                      
+var i = 1;
+
+while(i <= upTo){
+    sum = sum + i;
+    i++;
+}
+
+
+alert(sum);  
 
 ----------------------------------------------
 float
@@ -106,17 +185,78 @@ condicionales
 	si, si no, si no si
 	var
 
-prompt
-	your age
 
-verificador de edad
 
 piedra papel o tijera
+---------------------------------------------
+
+while y do while
+for
+
+parseint
+	evita errores de numeros
+
+usar break para romper
+
+var number = parseInt(prompt("Digita un numero"));
+var primo = true;
+
+
+if(number <= 1){
+    primo = false;
+    console.log("No es primo");
+}
+else {
+    for( i = 2; i < number; i++){
+        if( number % i == 0){
+            primo = false;
+            console.log("No es numero primo!!");
+            break;
+            
+        } 
+    }
+}
 
 
 
+ generar numeros primos
+ poner cantidad de numeros primos que quieres y te los dice
+---------------------------------------------
+estructura de datos java
+	soporte de datos, la base
+		arreglos, hash y mas
+
+arreglos
+	estructura de datos ordenada, contiene elementos
+metodos
+	se ejecutan sobre algo
+	lenght/numero de elementos
+	push/agregar elemento al final
+	pop/saca ultimo elemento de la lista
+	shift/quita primer elemento
+	unshift/
+	concat/
+array
+	lista de datos, cualquiera,
+	guardar variables, guardar semanas, meses, agrupasr elementos
+
+//length push pop shift unshift concat
+var userList = ['edgar', 'juan']
+var numberList = [1, 2, 3, 4]
 
 
+userList.push("juanito");
+userList.pop("juanito");
+
+console.log(userList);
+
+numberList.shift(10);
+numberList.shift();
+
+numberList.unshift(10);
+console.log(numberList);
+
+shift, unshift, order, concat, join
 
 
 
